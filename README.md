@@ -11,4 +11,4 @@ Things to do:
 
 4: Open https://yourusername.github.io/JavaScript to see which country the name you chose at the beginning is most likely to be from
 
-5: Tap F12 or Fn+ F12 to open the DevTools console and in "Console" type: "suma(number, number)" replacing the "number" with the number you want for sum the numbers
+5: Tap F12 or Fn+ F12 to open the DevTools console and in "Console" type: "suma(number,number)" replacing the "number" with the number you want for sum the numbers
