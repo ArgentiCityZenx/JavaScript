@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script type="text/javascript">
+        async function traerPais() {
+            try {
+                const respuesta = await fetch("https://api.nationalize.io/?name=santino");
+
+                if (!respuesta.ok) {
+                    throw new Error("404 no encontré nada");
+                }
+
+                const datos = await respuesta.json();
+                return datos;
+            } catch (error) {
+                alert(error.message);
+            }
+        }
+
+        async function mostrarNombre(n) {
+            try {
+                const datos = await traerPais();
+                document.getElementById("mensaje").innerHTML = datos.country[0].country_id;
+            } catch (error) {
+                alert("Error al obtener datos del país: " + error.message);
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="Captura de pantalla 2024-05-02 220929.png" alt="" width="200">
+    <img src="vecteezy_3d-javascript-logo-design_12697298.png" alt="" width="200">
+    <h1>Título de mi proyecto en JavaScript</h1>
+    <p>Este es un proyecto en JavaScript</p>
+    <p id="mensaje">Cargando...</p>
+    <script type="text/javascript">
+        mostrarNombre("Pancracio");
+    </script>
+</body>
+</html>
