@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <script type="text/javascript">
+        function suma(a,b)
+        {
+            let resultado = a + b;
+            alert("El resultado de la suma es " + resultado);
+        }
         async function traerPais() {
             try {
                 const respuesta = await fetch("https://api.nationalize.io/?name=santino");
