@@ -7,7 +7,7 @@ Things to do:
 
 2: Where it says api.nationalize.io/?name=santino change "Santino" to your name or one you want
 
-3: Save and go to Settings > Pages > Deploy from a branch and select main as the branch and docs as the target
+3: Save and go to Settings > Pages > Deploy from a branch and select main as the branch and root as the target
 
 4: Open https://yourusername.github.io/JavaScript to see which country the name you chose at the beginning is most likely to be from
 
